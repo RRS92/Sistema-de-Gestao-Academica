@@ -1,0 +1,5 @@
+package com.ifpe.cadastroalunos.aluno;
+
+public record DadosCadastroAluno(String nome, String matricula, String curso, String periodo, int idade, String email, String CPF) {
+
+}

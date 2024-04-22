@@ -1,0 +1,5 @@
+package com.ifpe.gestaoalunos.disciplinas;
+
+public record DadosCadastroDisciplina(String nome, int quantidadeAlunos, int professor, float cargaHoraria) {
+
+}

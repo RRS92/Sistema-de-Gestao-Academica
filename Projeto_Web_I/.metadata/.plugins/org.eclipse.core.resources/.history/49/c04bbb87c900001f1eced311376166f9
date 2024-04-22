@@ -1,0 +1,5 @@
+package com.ifpe.gestaoalunos.controllers;
+
+public class ProfessorController {
+
+}

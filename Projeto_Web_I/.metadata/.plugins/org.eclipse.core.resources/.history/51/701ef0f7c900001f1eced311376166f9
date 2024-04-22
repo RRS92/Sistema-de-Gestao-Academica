@@ -1,0 +1,5 @@
+package com.ifpe.gestaoalunos.professor;
+
+public interface ProfessorRepository {
+
+}

@@ -1,0 +1,26 @@
+package com.ifpe.gestaoalunos.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+import com.ifpe.gestaoalunos.disciplinas.Disciplina;
+import com.ifpe.gestaoalunos.disciplinas.DisciplinaRepository;
+import com.ifpe.gestaoalunos.disciplinas.DadosCadastroDisciplina;
+
+@RestController
+@RequestMapping("/disciplinas")
+public class DisciplinaController {
+	
+	@Autowired
+	private DisciplinaRepository repository;
+	
+	@PostMapping
+	public void cadastrar(@RequestBody DadosCadastroDisciplina dados) {
+		repository.save(new Disciplina(dados));
+	}
+
+}

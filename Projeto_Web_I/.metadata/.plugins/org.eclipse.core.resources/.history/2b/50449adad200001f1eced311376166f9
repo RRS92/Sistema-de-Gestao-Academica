@@ -1,0 +1,9 @@
+create table disciplina(
+id bigint not null auto_increment,
+nome varchar(100) not null,
+quantidadeAlunos int not null,
+professor int not null,
+cargaHoraria float not null,
+
+primary key(id)
+);
